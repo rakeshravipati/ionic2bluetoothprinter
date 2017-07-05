@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
@@ -24,3 +25,6 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+=======
+# ionic2bluetoothprinter
+>>>>>>> 65914205c02cbb91dd13b27d40f2ac1895f11214
