@@ -7,8 +7,28 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+	The world is your oyster.
+	<p>
+	If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+	</p>
+	<button ion-button (click)="getPrintersList()">List Devices</button>
+	<p>Printer Details : {{ printerslist | json }}</p>
+	<p>Status : {{ status }}</p>	
+	<ion-input type="text" [(ngModel)]="feedlines"></ion-input>
+	<br/>
+	<button ion-button (click)="connectDevice()" block>Connect Device</button>
+	<br/>
+	<button ion-button (click)="printText(' <h1>Hello World</h1> \n Break line \n New Characters \n \n \n \n')" block>Print</button>
+	<br/>
+	<button ion-button (click)="provideFeed(feedlines)" full>Feed</button>
+	<br/>
+	<button ion-button (click)="printBarcode()" full>Print Barcode</button>
+	<br/>
+	<button ion-button (click)="print2DBarcode()" full>Print 2D Barcode</button>
+	<br/>
+	<button ion-button (click)="printPage()" full>Print Page</button>
+	<br/>
+	<button ion-button (click)="printMyImage()" full>Print Image</button>
+	<br/>
+	<img src="assets/icon.png" alt="">
 </ion-content>
